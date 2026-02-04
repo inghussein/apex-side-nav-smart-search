@@ -2,7 +2,7 @@
 
 A dynamic, high-performance search bar for the Oracle APEX Side Navigation Menu. It allows users to filter navigation items in real-time without modifying the Universal Theme templates.
 
-![Preview](preview.png)
+![Preview](preview.gif)
 ## 🚀 Features
 
 * **Zero-Config Injection:** Automatically injects the search input into the DOM (no User Interface templates changes required).
