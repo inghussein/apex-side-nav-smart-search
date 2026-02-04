@@ -1,25 +1,50 @@
-# APEX Side Navigation Smart Search
+# APEX Side Navigation Smart Search 🔍
 
-Un plugin dinámico que agrega una barra de búsqueda inteligente al menú de navegación lateral (Side Navigation) de Oracle APEX.
+A dynamic, high-performance search bar for the Oracle APEX Side Navigation Menu. It allows users to filter navigation items in real-time without modifying the Universal Theme templates.
 
-![Preview](preview.gif) 
+![Preview](preview.png)
+## 🚀 Features
 
-## Características
-* 🔎 Búsqueda en tiempo real.
-* 📂 Expande automáticamente los menús padres.
-* 🎨 Diseño nativo (se adapta al Universal Theme).
-* ⚡️ Inyección dinámica (no requiere editar la plantilla de la página).
+* **Zero-Config Injection:** Automatically injects the search input into the DOM (no User Interface templates changes required).
+* **Real-time Filtering:** Filters menu items instantly as you type.
+* **Auto-Expand:** Automatically expands parent tree nodes when a child item matches the search term.
+* **Native Look & Feel:** Inherits styles from the Universal Theme to look like a core component.
+* **Keyboard Support:** `Esc` to clear search and collapse the menu.
 
-## Instalación
-1.  Descarga el archivo `dynamic_action_plugin_com_hardsoftsas_menu_search.sql`.
-2.  En tu aplicación APEX, ve a **Shared Components > Plug-ins > Import**.
-3.  Sube el archivo `.sql`.
+## 📋 Requirements
 
-## Uso
-1.  Ve a la **Página 0 (Global Page)**.
-2.  Crea una **Dynamic Action** en el evento **Page Load**.
-3.  Acción: **APEX Side Navigation Smart Search**.
-4.  ¡Listo!
+* **Oracle APEX 20.2** or later.
+* **Universal Theme (Theme 42)**.
+
+## 📦 Installation
+
+1.  Download the latest `dynamic_action_plugin_com_hardsoftsas_menu_search.sql`.
+2.  Log in to your Oracle APEX Workspace.
+3.  Go to **App Builder > Your Application > Shared Components > Plug-ins**.
+4.  Click **Import** and select the `.sql` file.
+5.  Follow the wizard steps to complete the installation.
+
+## ⚙️ Usage
+
+To activate the search bar globally in your application:
+
+1.  Go to **Page 0 (Global Page)**.
+2.  Create a new **Dynamic Action**.
+    * **Name:** `Global - Menu Search`
+    * **Event:** `Page Load`
+3.  In the **True** action:
+    * **Action:** `APEX Side Navigation Smart Search` (Plugin).
+4.  Save and Run your application.
+
+## 🤝 Contributing
+
+Issues and Pull Requests are welcome. This project is intended to be a safe, welcoming space for collaboration.
+
+## 📄 License
+
+[MIT](LICENSE)
 
 ## Demo
 [https://oracleapex.com/ords/r/hussein/apex-side-navigation-smart-search/home?session=115483674139892]
+
+
