@@ -2,7 +2,9 @@
 
 Un plugin dinámico que agrega una barra de búsqueda inteligente al menú de navegación lateral (Side Navigation) de Oracle APEX.
 
-![Preview](preview.gif) ## Características
+![Preview](preview.gif) 
+
+## Características
 * 🔎 Búsqueda en tiempo real.
 * 📂 Expande automáticamente los menús padres.
 * 🎨 Diseño nativo (se adapta al Universal Theme).
