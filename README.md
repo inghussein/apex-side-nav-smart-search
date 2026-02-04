@@ -53,6 +53,6 @@ Issues and Pull Requests are welcome. This project is intended to be a safe, wel
 [MIT](LICENSE)
 
 ## Demo
-[https://oracleapex.com/ords/r/hussein/apex-side-navigation-smart-search/home?session=115483674139892]
+[https://oracleapex.com/ords/r/hussein/apex-side-navigation-smart-search/home]
 
 
