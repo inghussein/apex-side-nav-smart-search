@@ -4,6 +4,10 @@
 ---
 # APEX Side Navigation Smart Search 🔍
 
+![APEX Version](https://img.shields.io/badge/APEX-20.2%2B-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Type](https://img.shields.io/badge/Type-Plugin-green.svg)
+
 A dynamic, high-performance search bar for the Oracle APEX Side Navigation Menu. It allows users to filter navigation items in real-time without modifying the Universal Theme templates.
 
 ![Preview](preview.gif)
