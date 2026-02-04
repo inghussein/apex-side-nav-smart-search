@@ -22,7 +22,7 @@
   "oracle": {
     "versions": ["12.1.0.1", "19.0.0.0", "21.0.0.0"],
     "apex": {
-      "versions": ["20.2.0", "21.1.0", "22.1.0", "23.1.0"],
+      "versions": ["20.2.0", "21.1.0", "22.1.0", "23.1.0","24.1.0"],
       "plugin": {
         "internalName": "COM.HARDSOFTSAS.MENU_SEARCH",
         "type": "dynamic action",
