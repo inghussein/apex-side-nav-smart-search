@@ -52,6 +52,13 @@ Issues and Pull Requests are welcome. This project is intended to be a safe, wel
 
 [MIT](LICENSE)
 
+## Changelog
+
+### v1.0.1
+- Fixed incorrect root menu visibility during search
+- Parent menus now expand correctly when matched
+
+
 ## Demo
 [https://oracleapex.com/ords/r/hussein/apex-side-navigation-smart-search/home]
 
