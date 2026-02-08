@@ -1,6 +1,6 @@
 {
   "name": "APEX Side Navigation Smart Search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A dynamic search bar for the Oracle APEX Side Navigation Menu. It allows users to filter navigation items in real-time without modifying the Universal Theme templates.",
   "keywords": ["oracle-apex", "plugin", "navigation", "search", "menu", "filter", "dynamic action"],
   "homepage": "https://github.com/inghussein/apex-side-nav-smart-search",
