@@ -108,36 +108,50 @@
     }
 
     function performSearch(term) {
-      term = term.toLowerCase().trim();
+  term = term.toLowerCase().trim();
 
-      if (!term) {
-        resetMenu();
-        return;
+  if (!term) {
+    resetMenu();
+    return;
+  }
+
+  expandAll(() => {
+    let found = 0;
+
+    const $allLis = tree$.find("li");
+    $allLis.hide();
+    tree$.find(".menu-highlight").removeClass("menu-highlight");
+
+    tree$.find(".a-TreeView-label").each(function () {
+      const $label = $(this);
+      const text = $label.text().toLowerCase();
+
+      if (!text.includes(term)) return;
+
+      found++;
+
+      const $li = $label.closest("li");
+      const $childrenUl = $li.children("ul");
+
+      // Highlight
+      $label.addClass("menu-highlight");
+
+      // Mostrar nodo encontrado
+      $li.show();
+
+      // 👉 Si es padre, mostrar todo su subárbol
+      if ($childrenUl.length) {
+        $childrenUl.show();
+        $childrenUl.find("li").show();
       }
 
-      expandAll(() => {
-        let found = 0;
+      // Mostrar padres
+      expandParents($li);
+    });
 
-        tree$.find("li").hide();
-        tree$.find(".menu-highlight").removeClass("menu-highlight");
-
-        tree$.find(".a-TreeView-label").each(function () {
-          const $label = $(this);
-          const text = $label.text().toLowerCase();
-
-          if (text.includes(term)) {
-            found++;
-            const $li = $label.closest("li");
-            $label.addClass("menu-highlight");
-            $li.show();
-            expandParents($li);
-          }
-        });
-
-        tree$.children("ul").show();
-        found === 0 ? showNoResults(term) : hideNoResults();
-      });
-    }
+    found === 0 ? showNoResults(term) : hideNoResults();
+  });
+}
 
     function showNoResults(term) {
       let msg = $(".no-results-message");
